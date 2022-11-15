@@ -1,11 +1,3 @@
 <h1>edit your task</h1>
 
-<%= form_with model: @task do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :details %>
-  <%= f.text_field :details %>
-  <%= f.submit %>
-<% end %>
-
- <%= link_to 'Update', task_path(@task), method: :patch, data: { confirm: 'Are you sure?' } %>
+<%= render 'form', task: @task %>
