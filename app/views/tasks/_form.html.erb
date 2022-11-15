@@ -1,0 +1,11 @@
+<%= form_with model: @task, do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %> <br>
+  <%= f.label :details %>
+  <%= f.text_area :details %> <br>
+  <%= f.submit %> <br>
+
+  <%= link_to 'Back', tasks_path %> <br>
+  <%= link_to 'Delete', task_path(@task), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% end %> <br>
+<% end %>

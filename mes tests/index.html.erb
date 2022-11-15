@@ -1,0 +1,7 @@
+<h1> Create a restaurant</h1>
+
+  <ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= restaurant.name, restaurant.address, restaurant.rating, restaurant.phone_number, restaurant.category %></li>
+    <% end %>
+  <%/ul>
